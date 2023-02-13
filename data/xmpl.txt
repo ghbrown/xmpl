@@ -1,0 +1,7 @@
+
+print simple summaries and example usages of commands
+
+-- Example 1 --
+get example usage of the "find" command
+  xmpl find
+

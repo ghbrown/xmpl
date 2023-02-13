@@ -1,0 +1,9 @@
+
+summary goes here like this
+(be sure to leave a blank line at the very bottom for better
+ terminal experience)
+
+-- Example 1 --
+some text
+  command example (with no leading $ or #)
+
