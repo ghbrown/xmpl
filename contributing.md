@@ -1,7 +1,37 @@
 
-### "Testing"
-Before making a pull request, please ensure contributions pass
-linting by running a `make check`.
+### Purpose
+`xmpl` is
+- a tool to present common usage examples for quick reference on the
+command line
+- a framework for users to easily write their own examples for
+personal use
+- a great way to avoid the common and slow workflow
+
+```
+navigate to browser window
+browser search: example <command> usage
+click and scroll
+navigate back to terminal
+```
+
+
+
+`xmpl` is not
+- a replacement for man
+- meant to capture every use case or every combination of flags and
+options
+
+### Steps to a merged pull request
+
+- **linting**: before making a pull request, please ensure
+contributions pass "linting" by running `make test` after `make`
+- **manpage generation**:
+    - manpages are generated using `pandoc` (for ease of development)
+    - however, to make `xmpl` easy to install for users `pandoc` is
+    **only a developer dependency** (install via your package manager)
+    - contributors should run `make man` to generate the manpage
+    before `git commit`
+
 
 ### Style guidelines
 #### Meta

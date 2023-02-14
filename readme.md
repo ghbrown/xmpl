@@ -39,6 +39,9 @@ sudo make uninstall
 
 ### Contributing
 
+Bug reports can be made via issue. Bug reports on portability and
+grammar mistakes are especially welcome.
+
 Contributions are always welcome, especially documentation for
 commands currently missing examples or those missing common use
 cases. A template is present at `data/zzz_template`, and more
