@@ -1,0 +1,21 @@
+#!/bin/sh
+
+PREFIX=<prefix-tag>  # value set at make-time via sed
+q="'"
+
+user_dir=~/.local/share/xmpl   # location for custom user docs
+sys_dir=${PREFIX}/share/xmpl   # system directory of official docs
+user_path=${user_dir}/${1}.txt # path of user .txt (if exists)
+sys_path=${sys_dir}/${1}.txt   # path of official .txt (if exists)
+
+if [ -f ${user_path} ]; then   # check for user file
+    less ${user_path}
+elif [ -f ${sys_path} ]; then  # fallback to official file 
+    less ${sys_path}
+else
+    >&2 echo "xmpl: no file for ${q}${1}${q} at any of"
+    >&2 echo "  ${sys_path}"
+    >&2 echo "  ${user_path}"
+    >&2 echo "No such files"
+fi
+

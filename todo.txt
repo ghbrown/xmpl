@@ -1,9 +1,5 @@
 
 To do:
-- find out how to make manpage entry
-- create makefile to copy data to proper place, put xmpl on path, etc.
-- write make uninstall
+- make manpage entry
+- incorporate manpage into makefile
 - write PKGBUILD
-- add option to search user defined directory in <correct location?>
-  first, so users can add their own files (or overwrite the included
-  ones)
