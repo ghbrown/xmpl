@@ -1,11 +1,11 @@
 
 ### Purpose
-`xmpl` is
+`xmpl` is:
 - a tool to present common usage examples for quick reference on the
 command line
 - a framework for users to easily write their own examples for
 personal use
-- a great way to avoid the common and slow workflow
+- a great way to avoid this common and slow workflow:
 
 ```
 navigate to browser window
@@ -14,32 +14,34 @@ click and scroll
 navigate back to terminal
 ```
 
-
-
-`xmpl` is not
+`xmpl` is not:
 - a replacement for man
-- meant to capture every use case or every combination of flags and
-options
+- meant to capture every use case or every possible combination of
+flags and options
+
 
 ### Steps to a merged pull request
 
 - **linting**: before making a pull request, please ensure
-contributions pass "linting" by running `make test` after `make`
+contributions pass "linting" by running `make test` after `make`, no
+news is good news for errors
 - **manpage generation**:
-    - manpages are generated using `pandoc` (for ease of development)
+    - the manpage is generated using `pandoc` (for ease of
+    development)
     - however, to make `xmpl` easy to install for users `pandoc` is
     **only a developer dependency** (install via your package manager)
     - contributors should run `make man` to generate the manpage
-    before `git commit`
+    before `git commit` if the manpage was changed
 
 
 ### Style guidelines
 #### Meta
-- uknown arguments supplied by user should use the angle bracket
-notation like `<uknown argument>`
+- a template is available at `data/zzz_template.txt`
+- uknown arguments supplied by user should be wrapped in angle
+brackets like `<uknown argument>`
 - `foo`, `bar`, and `baz` are the default stand-in names for most
 cases
-- when commands are intimately connected, it is appropriate to include
+- when commands are intimately connected it is appropriate to include
 a `(see also: <command1>, <command2>, ...)` below the summary in the
 example file; a good case would be `pushd`, `popd` and `dirs` 
 - sections are specified with `-- <Section Name> ---` like

@@ -14,9 +14,11 @@ MANDEST = $(DESTDIR)$(MANPREFIX)/share/man
 
 all:
 	mkdir -p build
+	@# executable
 	cp -f src/xmpl build/xmpl
 	sed -i 's|<prefix-tag>|$(DEST)|' build/xmpl
 	chmod +x build/xmpl
+	@# manpage
 	gzip -c man/xmpl.1 > build/xmpl.1.gz
 
 .PHONY: test
@@ -24,8 +26,8 @@ test:
 	cp -rf test build/test
 	chmod +x build/test/*
 	@echo ''
-	@build/test/is_last_line_empty.sh data/*
-	@build/test/is_file_narrow.sh data/*
+	@build/test/extremal_lines.sh data/*
+	@build/test/width.sh data/*
 
 .PHONY: man
 man:

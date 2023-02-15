@@ -1,7 +1,6 @@
 
 summary goes here like this
-(be sure to leave a blank line at the very bottom for better
- terminal experience)
+[first, last line of file must be blank]
 
 -- Example 1 --
 some text

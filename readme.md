@@ -39,11 +39,11 @@ sudo make uninstall
 
 ### Contributing
 
-Bug reports can be made via issue. Bug reports on portability and
-grammar mistakes are especially welcome.
+Bug reports can be made via issue. Portability bugs are first
+priority, followed by command usage and/or grammar mistakes.
 
 Contributions are always welcome, especially documentation for
 commands currently missing examples or those missing common use
-cases. A template is present at `data/zzz_template`, and more
-guidelines can be found in `contributing.md`.
+cases. More information about the project and contribution guidelines
+can be found in `contributing.md`.
 

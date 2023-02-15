@@ -19,4 +19,3 @@ installed packages on the system with
 report number of words in foo.txt
   wc -w foo.txt
 
-

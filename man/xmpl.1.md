@@ -10,11 +10,17 @@ xmpl - show quick reference examples for commands
 **xmpl** provides access to common and example usage of commands
 
 # OPTIONS
-a help option (-h, --help) is under development
+**-h**, **--help**
+: Displays the help message
+**-c**, **--cat**
+: Use cat to view example (instead of the default less)
 
 # EXAMPLES
 **xmpl find**
 : Displays example usage for the find command
+
+**xmpl -c find**
+: Displays example usage for find using cat to view output
 
 # EXIT VALUES
 **0**
