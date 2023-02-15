@@ -9,6 +9,10 @@ xmpl - show quick reference examples for commands
 # DESCRIPTION
 **xmpl** provides access to common and example usage of commands
 
+One or more examples (each with numbered header) are given for each
+command; each example contains an explanation of the example in words
+followed by the command(s) on an indented line.
+
 # OPTIONS
 **-h**, **--help**
 : Displays the help message

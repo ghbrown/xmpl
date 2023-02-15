@@ -1,5 +1,8 @@
 
 To do:
+- add documentation for: touch, chmod, cat, tail, head, less, more
+                         kill, killall, which, shred
+                         patch, diff, vimdiff
 - only print example page if command exists on the system? (will need
   to try-except call of command) (add a flag to always show data)
 - think about using markdown and pandoc for everything
