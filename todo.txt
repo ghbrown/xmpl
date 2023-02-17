@@ -1,14 +1,11 @@
 
 To do:
-- add documentation for: touch, chmod, cat, tail, head, less, more
-                         kill, killall, which, shred
-                         patch, diff, vimdiff
-- only print example page if command exists on the system? (will need
-  to try-except call of command) (add a flag to always show data)
-- think about using markdown and pandoc for everything
-  - it is critical that the user be able to write their own documentation,
-    so at best we'd have to transform the markdown to .txt during
-    make all
-- think about using rich for readability
-  - again, how could the user write docs that looked as good as ours
+- add documentation for:
+   shred
+   patch
+   diff
+   vimdiff
+- only print example page if command exists on the system? (use
+  command -v) (then add flag to always show data, regardless of
+  existence)
 - write PKGBUILD

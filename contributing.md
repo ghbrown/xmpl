@@ -44,6 +44,9 @@ cases
 - when commands are intimately connected it is appropriate to include
 a `(see also: <command1>, <command2>, ...)` below the summary in the
 example file; a good case would be `pushd`, `popd` and `dirs` 
+- when more preferable options are available, `(see instead:
+<commands>)` with no examples is appropriate; a good example of this
+is `which` 
 - sections are specified with `-- <Section Name> ---` like
 `-- Example 1 --`
 - sometimes it is appropriate to write a `-- Notes --` section at the

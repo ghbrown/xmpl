@@ -11,6 +11,13 @@ To get common usage for the `find` command with explanations try
 
 ```
 $ xmpl find
+
+searches for files by their name and properties (file type, etc.)
+
+-- Example 1 --
+find files with exact name "foo.txt" in home directory (or children)
+  find ~/ -name foo.txt
+...
 ```
 
 You can supply your own examples in `~/.local/share/xmpl`. These

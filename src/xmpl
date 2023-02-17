@@ -12,7 +12,6 @@ while [ ${#} -gt 0 ]; do
             echo '   -h, --help : prints this help message'
             echo '   -c, --cat  : use cat to view example (instead of less)'
             echo ''
-            shift
             exit 0
             ;;
         -c | --cat)  # output via cat instead of less
