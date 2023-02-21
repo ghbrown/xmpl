@@ -43,6 +43,10 @@ Uninstall with
 sudo make uninstall
 ```
 
+If you don't have `sudo` priveleges (or just want a user install), use
+`make install-user` and `make uninstall-user` instead of the
+respective commands above.
+
 
 ### Contributing
 

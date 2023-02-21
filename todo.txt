@@ -8,4 +8,7 @@ To do:
 - only print example page if command exists on the system? (use
   command -v) (then add flag to always show data, regardless of
   existence)
+- less sometimes starts first line at middle or bottom of terminal,
+  which is not very aesthetic (man somehow always handles this
+  properly)
 - write PKGBUILD
