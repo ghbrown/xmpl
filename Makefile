@@ -40,7 +40,7 @@ clean:
 install:
 	mkdir -p $(DEST)/bin $(DEST)/share/xmpl
 	cp -f build/xmpl $(DEST)/bin/xmpl
-	cp -rf data $(DEST)/share/xmpl
+	cp -rf data/* $(DEST)/share/xmpl
 	mkdir -p $(MANDEST)/man1
 	cp -f build/xmpl.1.gz $(MANDEST)/man1/xmpl.1.gz
 
