@@ -1,10 +1,12 @@
 
 To do:
+- integrate markdown styler into actual code
+- change example files over to markdown
 - add documentation for:
-   shred
-   patch
-   diff
-   vimdiff
+                        shred
+                        patch
+                        diff
+                        vimdiff
 - only print example page if command exists on the system? (use
   command -v) (then add flag to always show data, regardless of
   existence)
