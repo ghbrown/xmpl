@@ -1,6 +1,9 @@
 
 To do:
-- integrate markdown styler into actual code
+- change over all pages to markdown
+- see if the check for blank lines at top and bottom can be obviated
+  by injecting them into the temporary file that gets created (this
+  would be one less rule for the actual example files to follow)
 - change example files over to markdown
 - add documentation for:
                         shred

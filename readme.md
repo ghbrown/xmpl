@@ -20,10 +20,8 @@ find files with exact name "foo.txt" in home directory (or children)
 ...
 ```
 
-You can supply your own examples in `~/.local/share/xmpl`. These
-effectively overwrite the included examples, so start by copying the
-relevant example from `/usr/share/xmpl` or `/usr/local/share/xmpl`
-if you want to make edits.
+You can supply your own markdown formatted examples in `~/.local/share/xmpl`.
+These effectively overwrite the included examples, so start by copying the relevant example from `/usr/share/xmpl` or `/usr/local/share/xmpl` if you want to make edits.
 
 
 ### Installation

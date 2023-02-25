@@ -1,4 +1,3 @@
-#!/bin/sh
 
 # useful regex concepts: [^x] matches all characters but x
 #                        \(<stuff>\) sed capture
@@ -20,17 +19,17 @@ cyn=36
 wht=37
 
 # full codes
-hdr="${esc}[${mgt};${bld}m" # header (starts: magenta, bold)
-nln="${esc}[${ylw}m"        # inline code (starts: yellow)
-cbl="${esc}[${grn}m"        # block code (starts: green)
+hdr="${esc}[${ylw};${bld}m" # header (starts: ylw, bold)
+nln="${esc}[${mgt}m"        # inline code (starts: magenta)
+cbl="${esc}[${blu}m"        # block code (starts: blue)
 end="${esc}[${nll}m"
 
 
-function stylize_line_by_line() {
+function stylize_md() {
     in_file="${1}"  # file to stylize
     faithful=${2}   # render markdown faithfully?
-    cfile=/tmp/xmpl_colorized.md  # stylized file location
-    rm -f ${cfile}
+    sfile=/tmp/xmpl_colorized.md  # stylized file location
+    rm -f ${sfile}
     in_code_block=0
     while IFS= read -r line; do # iterative over file lines
         start_end_block=$(block_start_or_end ${line} ${in_code_block})
@@ -55,10 +54,10 @@ function stylize_line_by_line() {
              [ ${start_end_block} -eq 2 ]); then
             pass=1 # dummy variable to pass
         else
-            echo "${line}" >> ${cfile}
+            echo "${line}" >> ${sfile}
         fi
     done < "${in_file}"
-    less -R ${cfile}
+    echo ${sfile}
 }
 
 
@@ -124,5 +123,3 @@ function style_code_block() {
     fi
 }
 
-
-stylize_line_by_line asdf.md 1

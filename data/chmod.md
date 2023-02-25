@@ -1,21 +1,26 @@
 
 change permissions (and mode bits)
 
--- Example 1 --
-make foo.sh executable (+x)
-  chmod +x foo.sh
+# Example 1
+make `foo.sh` executable (`+x`)
+```
+chmod +x foo.sh
+```
 
--- Example 2 --
-render foo.sh non-executable (-x) for others (o) who are not the file
-owner nor members of the file's grup
-  chmod o-x foo.sh
+# Example 2
+render `foo.sh` non-executable (`-x`) for others (`o`) who are not the file owner nor members of the file's group
+```
+chmod o-x foo.sh
+```
 
--- Example 3 --
-render bar/ and all contents recursively (-r) non-writable for the
-file owner/user (u)
-  chmod -R u-w bar
+# Example 3
+render `bar/` and all contents recursively (`-r`) non-writable (`-w`) for the file owner/user (`u`)
+```
+chmod -R u-w bar
+```
 
--- Notes --
+# Notes
+```
 LETTER    CLASS     DESCRIPTION
  u        user      file owner
  g        group     members of the file's group
@@ -32,4 +37,5 @@ MODE   NAME     DESCRIPTION
  r     read     read a file or list a directory's contents
  w     write    write to a file or directory
  x     execute  execute a file or recurse a directory tree
+```
 

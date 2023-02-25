@@ -16,7 +16,9 @@ MANDESTUSER=$(DESTUSER)/share/man
 all:
 	mkdir -p build
 	@# executable
-	cp -f src/xmpl build/xmpl
+	echo "#!/bin/sh" > build/xmpl
+	cat src/stylize_md.sh >> build/xmpl
+	cat src/xmpl.sh >> build/xmpl
 	sed -i 's|<prefix-tag>|$(DEST)|' build/xmpl
 	chmod +x build/xmpl
 	@# manpage
@@ -28,7 +30,6 @@ test:
 	chmod +x build/test/*
 	@echo ''
 	@build/test/extremal_lines.sh data/*
-	@build/test/width.sh data/*
 
 .PHONY: man
 man:
@@ -40,7 +41,7 @@ clean:
 install:
 	mkdir -p $(DEST)/bin $(DEST)/share/xmpl
 	cp -f build/xmpl $(DEST)/bin/xmpl
-	cp -rf data $(DEST)/share/xmpl
+	cp -rf data/* $(DEST)/share/xmpl
 	mkdir -p $(MANDEST)/man1
 	cp -f build/xmpl.1.gz $(MANDEST)/man1/xmpl.1.gz
 

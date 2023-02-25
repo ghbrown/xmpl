@@ -1,7 +1,7 @@
-#!/bin/sh
 
 # parse flags and options
-viewer="less"  # default viewer
+viewer="less -RFXK"   # default viewer
+true_markdown=0       # default to more streamlined markdown
 while [ ${#} -gt 0 ]; do
     case ${1} in
         -h | --help)
@@ -16,6 +16,10 @@ while [ ${#} -gt 0 ]; do
             ;;
         -c | --cat)  # output via cat instead of less
             viewer="cat"
+            shift
+            ;;
+        -m | --markdown) # render faithful markdown
+            true_markdown=1
             shift
             ;;
         -* | --*)
@@ -35,13 +39,15 @@ q="'"
 
 user_dir=~/.local/share/xmpl      # location for user's docs
 sys_dir=${PREFIX}/share/xmpl      # system directory of official docs
-user_path=${user_dir}/${name}.txt # path of user .txt (if exists)
-sys_path=${sys_dir}/${name}.txt   # path of official .txt (if exists)
+user_path=${user_dir}/${name}.md  # path of user .md (if exists)
+sys_path=${sys_dir}/${name}.md    # path of official .md (if exists)
 
 if [ -f ${user_path} ]; then   # check for user file
-    ${viewer} ${user_path}
+    styled=$(stylize_md ${user_path} ${true_markdown}) # path to stylized file
+    ${viewer} ${styled}
 elif [ -f ${sys_path} ]; then  # fallback to official file 
-    ${viewer} ${sys_path}
+    styled=$(stylize_md ${sys_path} ${true_markdown}) # path to stylized file
+    ${viewer} ${styled}
 else
     >&2 echo "xmpl: no file for ${q}${name}${q} at any of"
     >&2 echo "  ${sys_path}"
