@@ -1,6 +1,11 @@
 
 To do:
 - change over all pages to markdown
+- -c flag not appearing properly in manpage
+- manpage needs to updated for -m
+- grep for txt before merging stylization stuff
+- has noticable latency when CPU is limited (meaning it's a bit slow)
+  see if a virtual file can be used to avoid the writes to disk
 - see if the check for blank lines at top and bottom can be obviated
   by injecting them into the temporary file that gets created (this
   would be one less rule for the actual example files to follow)

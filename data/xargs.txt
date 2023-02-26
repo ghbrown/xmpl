@@ -1,8 +1,0 @@
-
-xargs is often used to pipe data into commands which cannot directly
-receive data via standard pipe (|)
-
--- Example 1 --
-use xargs to pass timezone string (from web request) to timedatectl
-  curl https://ipapi.co/timezone | xargs timedatectl set-timezone
-

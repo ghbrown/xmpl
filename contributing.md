@@ -60,5 +60,5 @@ end of the file, but it should never be much longer than about 7 lines
 `#`, if the user will need `sudo` just include it
 - when discussing paths, use markdown inline code format like `foo/bar`
 - when discussing pattern matching, wrap the pattern to be matched
-in double quotes like `"this"`, see `grep.txt` for an example
+in double quotes like `"this"`, see `grep.md` for an example
 
