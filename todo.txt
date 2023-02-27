@@ -1,11 +1,13 @@
 
 To do:
-- change over all pages to markdown
-- -c flag not appearing properly in manpage
-- manpage needs to updated for -m
-- grep for txt before merging stylization stuff
-- has noticable latency when CPU is limited (meaning it's a bit slow)
-  see if a virtual file can be used to avoid the writes to disk
+- has noticable latency when CPU is governed (meaning it's a bit slow)
+  - I already use a virtual file if possible to save IO, this is just
+    caused by the poor performance of styler
+  - performance could be improved by running operations in batch, ie
+    call sed to style headers on the whole file at once, not a single
+    line at a time
+  - then run single pass of current approach just to detect code
+    blocks (sed could work but is messy, perl is not an option)
 - see if the check for blank lines at top and bottom can be obviated
   by injecting them into the temporary file that gets created (this
   would be one less rule for the actual example files to follow)

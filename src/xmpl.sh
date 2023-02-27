@@ -54,3 +54,5 @@ else
     >&2 echo "  ${user_path}"
     >&2 echo "No such files"
 fi
+
+rm -f ${styled}  # remove temporary file (created in stylize_md)

@@ -24,12 +24,22 @@ nln="${esc}[${mgt}m"        # inline code (starts: magenta)
 cbl="${esc}[${blu}m"        # block code (starts: blue)
 end="${esc}[${nll}m"
 
+function temp_file() {
+    # creates a temporary file (with preference to make in RAM)
+    # (memory must be freed by calling process later)
+    if [ -d /dev/shm ]; then  # "virtual" file in RAM
+        tfile=$(mktemp -p /dev/shm)
+    else  # real file on disk
+        tfile=$(mkdtemp)
+    fi
+    echo ${tfile}
+}
+
 
 function stylize_md() {
     in_file="${1}"  # file to stylize
     faithful=${2}   # render markdown faithfully?
-    sfile=/tmp/xmpl_colorized.md  # stylized file location
-    rm -f ${sfile}
+    sfile=$(temp_file)  # location of stylized file
     in_code_block=0
     while IFS= read -r line; do # iterative over file lines
         start_end_block=$(block_start_or_end ${line} ${in_code_block})

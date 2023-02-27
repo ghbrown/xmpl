@@ -62,5 +62,5 @@ can be found in `contributing.md`.
 
 I didn't know other projects like this existed before I wrote `xmpl`  (though not for lack of searching). After surveying the competition:
 - [`eg`](https://github.com/srsudar/eg) ticks all my boxes, but has somewhat bloated example pages that may approach or exceed the length of the manpages themselves
-- [`tldr`](https://github.com/tldr-pages/tldr) is great except you can't trivially add personal/local/custom examples
+- [`tldr`](https://github.com/tldr-pages/tldr) is great, except you can't trivially add personal/local/custom examples
 

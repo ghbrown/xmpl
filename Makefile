@@ -33,7 +33,7 @@ test:
 
 .PHONY: man
 man:
-	pandoc man/xmpl.1.md -s -t man -o man/xmpl.1
+	pandoc -s -t man -f markdown-smart -o man/xmpl.1 man/xmpl.1.md 
 
 clean:
 	rm -rf build
