@@ -29,7 +29,7 @@ test:
 	cp -rf test build/test
 	chmod +x build/test/*
 	@echo ''
-	@build/test/extremal_lines.sh data/*
+	@build/test/extremal_nonempty.sh data/*
 
 .PHONY: man
 man:

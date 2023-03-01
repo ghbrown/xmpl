@@ -1,4 +1,3 @@
-
 change permissions (and mode bits)
 
 # Example 1
@@ -38,4 +37,3 @@ MODE   NAME     DESCRIPTION
  w     write    write to a file or directory
  x     execute  execute a file or recurse a directory tree
 ```
-

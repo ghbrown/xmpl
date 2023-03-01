@@ -1,4 +1,3 @@
-
 display example usage of commands
 
 # Example 1
@@ -22,4 +21,3 @@ xmpl -c find
 
 # Notes
 One or more examples (each with numbered header) are given for each command; each example contains an explanation of the example in words followed by the command(s) on an indented line.
-

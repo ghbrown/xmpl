@@ -1,4 +1,3 @@
-
 list directory contents
 
 # Example 1
@@ -27,4 +26,3 @@ ls -lh
 
 # Notes
 the ls command is often aliased to `ls <some options>` in shell configuration files like .bashrc, .bash_profile, etc.
-

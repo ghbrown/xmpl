@@ -1,4 +1,3 @@
-
 show how argument would be interpreted as a command
 (see also: `command`)
 
@@ -10,4 +9,3 @@ type gcc
 
 # Notes
 `type` can also detect aliases, in which case it prints the command pointed to by the alias (but not necessarily its path)
-

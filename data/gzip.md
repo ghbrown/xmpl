@@ -1,4 +1,3 @@
-
 compress or expand files
 
 # Example 1
@@ -19,4 +18,3 @@ compress `foo.txt` to `bar.txt.gz` using redirect to stdout (-c); `foo.txt` is l
 ```
 gzip -c foo.txt > bar.txt.gz
 ```
-

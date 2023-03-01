@@ -1,4 +1,3 @@
-
 terminate processes by process ID (PID)
 (see also: `killall`)
 
@@ -15,4 +14,3 @@ force kill processes 10101 and 20202 by sending stronger (but more unstable) KIL
 kill -s KILL 10101 20202
 kill -9 10101 20202
 ```
-

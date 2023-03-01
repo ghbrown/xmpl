@@ -1,4 +1,3 @@
-
 remove files or directories
 
 # Example 1
@@ -21,4 +20,3 @@ rm -f foo.txt baz.txt
 
 # Notes
 the `rm` command is often aliased to `rm <some options>` in shell configuration files like `.bashrc`, `.bash_profile`, etc.
-

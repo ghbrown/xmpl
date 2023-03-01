@@ -1,4 +1,3 @@
-
 print lines that match regular expressions
 
 # Example 1
@@ -24,4 +23,3 @@ use match inversion (`-v`) to print all lines from foo.txt containing `bar` but 
 ```
 grep bar foo.txt | grep -v baz
 ```
-

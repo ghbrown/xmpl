@@ -1,4 +1,3 @@
-
 display directory stack
 (see also: `pushd`, `popd`)
 
@@ -31,4 +30,3 @@ cd ../lib64     # actually wanted to be in lib64
 dirs            # to find out where one would return upon popd
 popd            # return to ~/foo/bar by popping /usr/lib from stack
 ```
-

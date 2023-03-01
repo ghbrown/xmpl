@@ -1,4 +1,3 @@
-
 compress and expand archives
 
 # Example 1
@@ -28,4 +27,3 @@ tar -xzf foo.tar.gz -C bar/
 # Notes
 The name of the tar archive (e.g. `foo.tar.gz`) does not determine the name of the untarred directory; for example, foo.tar.gz could untar to `bar/`.
 The given examples also apply to the no-compression case by omission of the `-z` flags.
-

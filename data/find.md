@@ -1,4 +1,3 @@
-
 searches for files by their name and properties (file type, etc.)
 
 # Example 1
@@ -12,4 +11,3 @@ find directories (`-d`) containing `foo` anywhere on system, case insensitive (`
 ```
 find / -type d -iname "*foo*"
 ```
-

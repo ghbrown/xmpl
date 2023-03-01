@@ -1,4 +1,3 @@
-
 download files from the network
 
 # Example 1
@@ -18,4 +17,3 @@ recursively (`-r`) download files in the background (`-b`)
 ```
 wget -r -b https://example.com/release
 ```
-

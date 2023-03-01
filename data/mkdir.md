@@ -1,4 +1,3 @@
-
 make/create directories
 
 # Example 1
@@ -12,4 +11,3 @@ create directory `foo/bar/baz/` below the current directory, making parent direc
 ```
 mkdir -p foo/bar/baz
 ```
-

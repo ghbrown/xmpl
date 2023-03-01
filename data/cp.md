@@ -1,4 +1,3 @@
-
 copy files and directories
 
 # Example 1
@@ -32,4 +31,3 @@ copy contents of `foo/` to `bar/`, forcefully (`-f`) overwriting existing files 
 ```
 mv -f foo/* bar
 ```
-

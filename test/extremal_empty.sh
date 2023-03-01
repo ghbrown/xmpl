@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# NOTE: test currently obsolete and unused by Makefile
 # properly formatted files are padded by a SINGLE blank line on top
 # and bottom
 

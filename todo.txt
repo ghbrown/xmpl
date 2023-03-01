@@ -8,10 +8,6 @@ To do:
     line at a time
   - then run single pass of current approach just to detect code
     blocks (sed could work but is messy, perl is not an option)
-- see if the check for blank lines at top and bottom can be obviated
-  by injecting them into the temporary file that gets created (this
-  would be one less rule for the actual example files to follow)
-- change example files over to markdown
 - add documentation for:
                         shred
                         patch
@@ -20,7 +16,4 @@ To do:
 - only print example page if command exists on the system? (use
   command -v) (then add flag to always show data, regardless of
   existence)
-- less sometimes starts first line at middle or bottom of terminal,
-  which is not very aesthetic (man somehow always handles this
-  properly)
 - write PKGBUILD

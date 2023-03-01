@@ -1,4 +1,3 @@
-
 exchange requests and responses with a web server
 
 # Example 1
@@ -12,4 +11,3 @@ save requested file to disk as `foo.html`
 ```
 curl --output foo.html https://example.com
 ```
-

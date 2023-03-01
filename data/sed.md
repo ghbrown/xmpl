@@ -1,4 +1,3 @@
-
 "stream editor"; edit, filter, and transform text
 especially useful for finding and replacing text
 
@@ -19,4 +18,3 @@ replace `a<anything>foo` with `bar` (first occurence per line), editing the file
 ```
 sed -i 's/a*foo/bar/' baz.txt
 ```
-

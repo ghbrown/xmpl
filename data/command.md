@@ -1,4 +1,3 @@
-
 execute or view interpretation of command
 (see also: `type`)
 
@@ -16,4 +15,3 @@ command python
 
 # Notes
 `command` can also detect aliases, in which case it prints the command pointed to by the alias (but not necessarily its path)
-

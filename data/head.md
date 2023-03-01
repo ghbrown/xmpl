@@ -1,4 +1,3 @@
-
 output beginning (head) of file
 
 # Example 1
@@ -18,4 +17,3 @@ show the first 10 lines of all `.txt` files in the current directory, giving eac
 ```
 head *.txt
 ```
-

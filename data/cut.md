@@ -1,4 +1,3 @@
-
 remove portions of text streams
 
 # Example 1
@@ -13,4 +12,3 @@ characters (here 1-3)
 ```
 echo 'foo bar baz' | cut -c 1-3
 ```
-

@@ -1,4 +1,3 @@
-
 create files (and change their timestamps)
 
 # Example 1
@@ -21,4 +20,3 @@ change modification time (`-m`) of `bar.txt` to a specific timestamp
 ```
 touch -m -t <YYYYMMDDhhmm> bar.txt
 ```
-

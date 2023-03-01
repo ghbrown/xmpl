@@ -1,4 +1,3 @@
-
 reports word count, character count, newline count, byte count, etc.
 
 # Example 1
@@ -18,4 +17,3 @@ report number of words in `foo.txt`
 ```
 wc -w foo.txt
 ```
-

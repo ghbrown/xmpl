@@ -1,4 +1,3 @@
-
 output end (tail) of file
 
 # Example 1
@@ -18,4 +17,3 @@ show the last 10 lines of all `.txt` files in the current directory, giving each
 ```
 tail *.txt
 ```
-

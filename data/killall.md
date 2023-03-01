@@ -1,4 +1,3 @@
-
 terminate processes by name
 (see also: `kill`)
 
@@ -20,4 +19,3 @@ interactively (`-i`) prompted for each kill
 ```
 killall -i firefox
 ```
-

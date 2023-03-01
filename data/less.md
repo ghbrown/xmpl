@@ -1,4 +1,3 @@
-
 scroll through file contents
 
 # Example 1
@@ -31,4 +30,3 @@ j, down-arrow: scroll down
           :n : next file
           :p : previous file
 ```
-

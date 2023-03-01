@@ -1,4 +1,3 @@
-
 concatenate files (and print to stdout)
 
 # Example 1
@@ -24,4 +23,3 @@ cat -e foo.txt
 print contents of `foo.txt` to standard output, showing `TAB` as `^I`
 (`-T`)
  cat -T foo.txt
-

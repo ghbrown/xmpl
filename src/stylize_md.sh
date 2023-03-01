@@ -30,7 +30,7 @@ function temp_file() {
     if [ -d /dev/shm ]; then  # "virtual" file in RAM
         tfile=$(mktemp -p /dev/shm)
     else  # real file on disk
-        tfile=$(mkdtemp)
+        tfile=$(mktemp)
     fi
     echo ${tfile}
 }
@@ -41,6 +41,7 @@ function stylize_md() {
     faithful=${2}   # render markdown faithfully?
     sfile=$(temp_file)  # location of stylized file
     in_code_block=0
+    echo "" >> ${sfile}  # prepend blank line for readability
     while IFS= read -r line; do # iterative over file lines
         start_end_block=$(block_start_or_end ${line} ${in_code_block})
         # housekeeping for code block start
@@ -67,6 +68,7 @@ function stylize_md() {
             echo "${line}" >> ${sfile}
         fi
     done < "${in_file}"
+    echo "" >> ${sfile}  # append blank line for readability
     echo ${sfile}
 }
 

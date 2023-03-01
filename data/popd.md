@@ -1,4 +1,3 @@
-
 pop entry from directory stack
 (see also: `pushd`, `dirs`)
 
@@ -15,4 +14,3 @@ cd ~/foo/bar
 pushd /usr/lib  # perhaps to examine available libraries
 popd            # return to ~/foo/bar by popping /usr/lib from stack
 ```
-
