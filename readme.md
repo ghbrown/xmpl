@@ -56,9 +56,9 @@ can be found in `contributing.md`.
 
 ### Comparison with similar projects
 
-- zero dependencies beyond typical GNU+Linux utilities like `sed`, etc.; not even Python
-- simple and easy to use; it does one thing (show examples) and does it well
-- follows typical GNU+Linux program behavior for install, configuration, etc., no need to remember custom install or config steps
+- zero dependencies beyond typical GNU+Linux utilities like `sed`; not even Python
+- easy to use and understand; create your own examples for personal use in seconds
+- follows typical GNU+Linux program behavior for install, configuration, etc., no need to remember custom install or config steps in a programming language you may not use
 
 I didn't know other projects like this existed before I wrote `xmpl`  (though not for lack of searching). After surveying the competition:
 - [`eg`](https://github.com/srsudar/eg) ticks all my boxes, but has somewhat bloated example pages that may approach or exceed the length of the manpages themselves
