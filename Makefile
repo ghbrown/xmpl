@@ -16,7 +16,9 @@ MANDESTUSER=$(DESTUSER)/share/man
 all:
 	mkdir -p build
 	@# executable
-	cp -f src/xmpl build/xmpl
+	echo "#!/bin/sh" > build/xmpl
+	cat src/stylize_md.sh >> build/xmpl
+	cat src/xmpl.sh >> build/xmpl
 	sed -i 's|<prefix-tag>|$(DEST)|' build/xmpl
 	chmod +x build/xmpl
 	@# manpage
@@ -27,12 +29,11 @@ test:
 	cp -rf test build/test
 	chmod +x build/test/*
 	@echo ''
-	@build/test/extremal_lines.sh data/*
-	@build/test/width.sh data/*
+	@build/test/extremal_nonempty.sh data/*
 
 .PHONY: man
 man:
-	pandoc man/xmpl.1.md -s -t man -o man/xmpl.1
+	pandoc -s -t man -f markdown-smart -o man/xmpl.1 man/xmpl.1.md 
 
 clean:
 	rm -rf build

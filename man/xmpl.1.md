@@ -16,8 +16,12 @@ followed by the command(s) on an indented line.
 # OPTIONS
 **-h**, **--help**
 : Displays the help message
+
 **-c**, **--cat**
 : Use cat to view example (instead of the default less)
+
+**-m**, **--markdown**
+: View original markdown in plain text (styled but not streamlined)
 
 # EXAMPLES
 **xmpl find**

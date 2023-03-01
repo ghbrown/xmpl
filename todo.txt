@@ -1,14 +1,19 @@
 
 To do:
+- has noticable latency when CPU is governed (meaning it's a bit slow)
+  - I already use a virtual file if possible to save IO, this is just
+    caused by the poor performance of styler
+  - performance could be improved by running operations in batch, ie
+    call sed to style headers on the whole file at once, not a single
+    line at a time
+  - then run single pass of current approach just to detect code
+    blocks (sed could work but is messy, perl is not an option)
 - add documentation for:
-   shred
-   patch
-   diff
-   vimdiff
+                        shred
+                        patch
+                        diff
+                        vimdiff
 - only print example page if command exists on the system? (use
   command -v) (then add flag to always show data, regardless of
   existence)
-- less sometimes starts first line at middle or bottom of terminal,
-  which is not very aesthetic (man somehow always handles this
-  properly)
 - write PKGBUILD
